@@ -1,4 +1,4 @@
-"use client"; // Add this line to specify that this is a Client Component
+"use client"; // Add this line to specify this is a Client Component
 
 import React, { useState } from "react";
 import { FaSpinner } from "react-icons/fa"; // Import spinner icon for loading state
@@ -38,14 +38,14 @@ const Contact = () => {
       <div className="container mx-auto text-center">
         <h2 className="text-4xl font-bold text-white mb-6">Get In Touch</h2>
         <p className="text-lg md:text-xl leading-relaxed mb-8 text-gray-200">
-          I would love to hear from you. Whether it's a project, a collaboration, or a simple hello, feel free
-          to reach out.
+          I would love to hear from you. Whether it&apos;s a project, a collaboration, or a simple hello, feel
+          free to reach out.
         </p>
 
         {/* Status Message */}
         {status === "success" && (
           <div className="text-green-500 mb-6">
-            <p>Your message has been sent successfully! I'll get back to you soon.</p>
+            <p>Your message has been sent successfully! I&apos;ll get back to you soon.</p>
           </div>
         )}
         {status === "error" && (

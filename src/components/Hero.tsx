@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import Navbar from "./Navbar";
 
 const Hero: React.FC = () => {
@@ -20,7 +21,12 @@ const Hero: React.FC = () => {
             <span className="text-purple-300">Web Developer</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-300 mb-6">
-          "Hi, I'm Muzakka Mir, a passionate beginner web developer eager to create functional and visually appealing websites. I specialize in HTML, CSS, and JavaScript and am learning modern tools like React to enhance my skills. My portfolio showcases projects that reflect my journey and growth as a developer. I'm committed to building user-friendly websites while continuously learning and improving."
+            &quot;Hi, I&apos;m Muzakka Mir, a passionate beginner web developer eager to
+            create functional and visually appealing websites. I specialize in
+            HTML, CSS, and JavaScript and am learning modern tools like React to
+            enhance my skills. My portfolio showcases projects that reflect my
+            journey and growth as a developer. I&apos;m committed to building
+            user-friendly websites while continuously learning and improving.&quot;
           </p>
           <Link
             href="#contact"
@@ -33,16 +39,18 @@ const Hero: React.FC = () => {
         {/* Profile Image */}
         <div className="relative mt-10 md:mt-0 flex justify-center md:justify-end">
           <div className="w-52 h-52 md:w-72 md:h-72 bg-gradient-to-tr from-purple-500 to-purple-700 rounded-full mx-auto overflow-hidden shadow-lg transform transition-all duration-300 hover:scale-105">
-            <img
-              src="images/profile.png"
-              alt="Muzakkamir Mir"
-              className="w-full h-full object-cover"
+            <Image
+              src="/images/profile.png"
+              alt="Profile picture of Muzakka Mir"
+              width={288}
+              height={288}
+              className="object-cover"
             />
           </div>
         </div>
       </div>
 
-      {/* Decorative Elements (Stars or Floating Icons) */}
+      {/* Decorative Elements */}
       <div className="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-b from-transparent to-black opacity-20 z-0"></div>
     </section>
   );

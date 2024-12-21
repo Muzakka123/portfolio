@@ -1,5 +1,5 @@
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
 
 interface PropsType {
   title: string;
@@ -16,9 +16,10 @@ const Card: React.FC<PropsType> = ({ title, desc, img, tags }) => {
         <Image
           className="w-full h-auto object-cover"
           src={img}
+          layout="responsive"
           width={350}
           height={200}
-          alt={title}
+          alt={`Image of ${title}`}
         />
       </div>
 
