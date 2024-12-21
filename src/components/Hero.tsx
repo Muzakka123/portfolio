@@ -20,7 +20,7 @@ const Hero: React.FC = () => {
             <span className="text-purple-300">Web Developer</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-300 mb-6">
-            Hello! I am Muzakkamir Mir, a passionate Web Developer. I create responsive, user-friendly websites that bring ideas to life.
+          "Hi, I'm Muzakka Mir, a passionate beginner web developer eager to create functional and visually appealing websites. I specialize in HTML, CSS, and JavaScript and am learning modern tools like React to enhance my skills. My portfolio showcases projects that reflect my journey and growth as a developer. I'm committed to building user-friendly websites while continuously learning and improving."
           </p>
           <Link
             href="#contact"
